@@ -1,5 +1,5 @@
 # Prompt
-PS1='\u @ \h [\w] > '
+PS1='\e[1m\u @ \h \e[0m [\w]  > '
 
 # Aliases
 alias ls='ls -lAF'
