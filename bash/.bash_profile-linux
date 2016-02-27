@@ -1,0 +1,24 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# Load aliases
+if [ -f ~/.bash_aliases ]; then
+	. ~/.bash_aliases
+fi
+
+# Path
+PATH=$PATH:$HOME/.local/bin:$HOME/bin
+export PATH
+
+# Prompt
+PS1='\e[1m\u @ \h \e[0m [\w]  > '
+
+# Aliases
+alias ls='ls -lAF'
+
+# emacs command line editing mode
+set -o emacs
